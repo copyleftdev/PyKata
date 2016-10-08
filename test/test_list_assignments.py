@@ -5,10 +5,10 @@
 # Based on AboutArrayAssignments in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutListAssignments(Koan):
+class AboutListAssignments(unittest.TestCase):
     def test_non_parallel_assignment(self):
         names = ["John", "Smith"]
         self.assertEqual(__, names)

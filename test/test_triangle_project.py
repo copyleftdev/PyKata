@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 # You need to write the triangle method in the file 'triangle.py'
 from triangle import *
 
 
-class AboutTriangleProject(Koan):
+class AboutTriangleProject(unittest.TestCase):
     def test_equilateral_triangles_have_equal_sides(self):
         self.assertEqual('equilateral', triangle(2, 2, 2))
         self.assertEqual('equilateral', triangle(10, 10, 10))

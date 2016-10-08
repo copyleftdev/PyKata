@@ -5,10 +5,10 @@
 # Based on AboutClassMethods in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutClassAttributes(Koan):
+class AboutClassAttributes(unittest.TestCase):
     class Dog(object):
         pass
 

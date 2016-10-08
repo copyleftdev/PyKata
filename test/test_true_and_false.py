@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutTrueAndFalse(Koan):
+class AboutTrueAndFalse(unittest.TestCase):
     def truth_value(self, condition):
         if condition:
             return 'true stuff'

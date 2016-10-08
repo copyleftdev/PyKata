@@ -5,12 +5,12 @@
 # Based on AboutSandwichCode in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 import re  # For regular expression string comparisons
 
 
-class AboutWithStatements(Koan):
+class AboutWithStatements(unittest.TestCase):
     def count_lines(self, file_name):
         try:
             f = open(file_name)

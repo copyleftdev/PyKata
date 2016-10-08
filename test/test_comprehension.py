@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutComprehension(Koan):
+class AboutComprehension(unittest.TestCase):
 
 
     def test_creating_lists_with_list_comprehensions(self):

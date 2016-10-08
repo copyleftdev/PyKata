@@ -8,10 +8,10 @@
 # a lot differently
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutGenerators(Koan):
+class AboutGenerators(unittest.TestCase):
 
     def test_generating_values_on_the_fly(self):
         result = list()

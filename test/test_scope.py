@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 import jims
 import joes
@@ -9,7 +9,7 @@ import joes
 counter = 0  # Global
 
 
-class AboutScope(Koan):
+class AboutScope(unittest.TestCase):
     #
     # NOTE:
     #   Look in jims.py and joes.py to see definitions of Dog used

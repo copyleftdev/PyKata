@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutDecoratingWithFunctions(Koan):
+class AboutDecoratingWithFunctions(unittest.TestCase):
     def addcowbell(fn):
         fn.wow_factor = 'COWBELL BABY!'
         return fn

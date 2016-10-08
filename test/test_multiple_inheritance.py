@@ -5,10 +5,10 @@
 # Slightly based on AboutModules in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutMultipleInheritance(Koan):
+class AboutMultipleInheritance(unittest.TestCase):
     class Nameable(object):
         def __init__(self):
             self._name = None

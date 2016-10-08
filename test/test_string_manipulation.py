@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutStringManipulation(Koan):
+class AboutStringManipulation(unittest.TestCase):
 
     def test_use_format_to_interpolate_variables(self):
         value1 = 'one'

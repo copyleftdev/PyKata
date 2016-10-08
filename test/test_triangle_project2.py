@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 # You need to finish implementing triangle() in the file 'triangle.py'
 from triangle import *
 
 
-class AboutTriangleProject2(Koan):
+class AboutTriangleProject2(unittest.TestCase):
     # The first assignment did not talk about how to handle errors.
     # Let's handle that part now.
     def test_illegal_triangles_throw_exceptions(self):

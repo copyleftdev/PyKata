@@ -16,7 +16,7 @@
 # Note: This is a bit trickier than its Ruby Koans counterpart, but you
 # can do it!
 
-from runner.koan import *
+import unittest
 
 
 class Proxy(object):
@@ -31,7 +31,7 @@ class Proxy(object):
 
 # The proxy object should pass the following Koan:
 #
-class AboutProxyObjectProject(Koan):
+class AboutProxyObjectProject(unittest.TestCase):
     def test_proxy_method_returns_wrapped_object(self):
         # NOTE: The Television class is defined below
         tv = Proxy(Television())
@@ -128,7 +128,7 @@ class Television(object):
 
 
 # Tests for the Television class.  All of theses tests should pass.
-class TelevisionTest(Koan):
+class TelevisionTest(unittest.TestCase):
     def test_it_turns_on(self):
         tv = Television()
 

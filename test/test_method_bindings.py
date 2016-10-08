@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
 def function():
@@ -17,7 +17,7 @@ class Class(object):
         return "parrot"
 
 
-class AboutMethodBindings(Koan):
+class AboutMethodBindings(unittest.TestCase):
     def test_methods_are_bound_to_an_object(self):
         obj = Class()
         self.assertEqual(__, obj.method.im_self == obj)

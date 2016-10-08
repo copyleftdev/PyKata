@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 import random
 
@@ -20,7 +20,7 @@ class DiceSet(object):
         pass
 
 
-class AboutDiceProject(Koan):
+class AboutDiceProject(unittest.TestCase):
     def test_can_create_a_dice_set(self):
         dice = DiceSet()
         self.assertTrue(dice)

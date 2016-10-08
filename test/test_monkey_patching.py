@@ -5,10 +5,10 @@
 # Related to AboutOpenClasses in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutMonkeyPatching(Koan):
+class AboutMonkeyPatching(unittest.TestCase):
     class Dog(object):
         def bark(self):
             return "WOOF"

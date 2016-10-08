@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutNewStyleClasses(Koan):
+class AboutNewStyleClasses(unittest.TestCase):
     class OldStyleClass:
         "An old style class"
         # Original class style have been phased out in Python 3.

@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 import re
 
 
-class AboutRegex(Koan):
+class AboutRegex(unittest.TestCase):
     """
         These koans are based on Ben's book: Regular Expressions in 10
         minutes. I found this book very useful, so I decided to write

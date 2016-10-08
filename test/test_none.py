@@ -5,10 +5,10 @@
 # Based on AboutNil in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutNone(Koan):
+class AboutNone(unittest.TestCase):
 
     def test_none_is_an_object(self):
         "Unlike NULL in a lot of languages"

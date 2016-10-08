@@ -10,10 +10,10 @@
 # Write a player class and a Game class to complete the project.  This
 # is a free form assignment, so approach it however you desire.
 
-from runner.koan import *
+import unittest
 
 
-class AboutExtraCredit(Koan):
+class AboutExtraCredit(unittest.TestCase):
     # Write tests here. If you need extra test classes add them to the
     # test suite in runner/path_to_enlightenment.py
     def test_extra_credit_task(self):

@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 import functools
 
 
-class AboutDecoratingWithClasses(Koan):
+class AboutDecoratingWithClasses(unittest.TestCase):
     def maximum(self, a, b):
         if a > b:
             return a

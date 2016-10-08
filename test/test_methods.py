@@ -5,14 +5,14 @@
 # Partially based on AboutMethods in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
 def my_global_function(a, b):
     return a + b
 
 
-class AboutMethods(Koan):
+class AboutMethods(unittest.TestCase):
     def test_calling_a_global_function(self):
         self.assertEqual(__, my_global_function(2, 3))
 

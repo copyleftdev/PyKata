@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutClasses(Koan):
+class AboutClasses(unittest.TestCase):
     class Dog(object):
         "Dogs need regular walkies. Never, ever let them drive."
 

@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutInheritance(Koan):
+class AboutInheritance(unittest.TestCase):
     class Dog(object):
         def __init__(self, name):
             self._name = name

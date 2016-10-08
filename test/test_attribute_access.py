@@ -5,10 +5,10 @@
 # Partially based on AboutMessagePassing in the Ruby Koans
 #
 
-from runner.koan import *
+import unittest
 
 
-class AboutAttributeAccess(Koan):
+class AboutAttributeAccess(unittest.TestCase):
 
     class TypicalObject(object):
         pass

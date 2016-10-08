@@ -6,13 +6,13 @@
 # Our AboutMultipleInheritance class is a little more comparable
 #
 
-from runner.koan import *
+import unittest
 
 from another_local_module import *
 from local_module_with_all_defined import *
 
 
-class AboutModules(Koan):
+class AboutModules(unittest.TestCase):
     def test_importing_other_python_scripts_as_modules(self):
         import local_module  # local_module.py
 

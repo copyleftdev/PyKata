@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
 # Greed is a dice game where you roll up to five dice to accumulate
@@ -38,7 +38,7 @@ def score(dice):
     pass
 
 
-class AboutScoringProject(Koan):
+class AboutScoringProject(unittest.TestCase):
     def test_score_of_an_empty_list_is_zero(self):
         self.assertEqual(0, score([]))
 

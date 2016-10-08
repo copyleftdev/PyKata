@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from runner.koan import *
+import unittest
 
 
-class AboutSets(Koan):
+class AboutSets(unittest.TestCase):
     def test_sets_make_keep_lists_unique(self):
         highlanders = ['MacLeod', 'Ramirez', 'MacLeod', 'Matunas',
             'MacLeod', 'Malcolm', 'MacLeod']
